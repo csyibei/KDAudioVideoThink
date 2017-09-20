@@ -1,0 +1,327 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE39926A1F6FA582006DFF3B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3992691F6FA582006DFF3B /* main.m */; };
+		EE39926D1F6FA582006DFF3B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EE39926C1F6FA582006DFF3B /* AppDelegate.m */; };
+		EE3992701F6FA582006DFF3B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE39926F1F6FA582006DFF3B /* ViewController.m */; };
+		EE3992731F6FA582006DFF3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE3992711F6FA582006DFF3B /* Main.storyboard */; };
+		EE3992751F6FA582006DFF3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE3992741F6FA582006DFF3B /* Assets.xcassets */; };
+		EE3992781F6FA582006DFF3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE3992761F6FA582006DFF3B /* LaunchScreen.storyboard */; };
+		EE3992811F6FA627006DFF3B /* KDRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3992801F6FA627006DFF3B /* KDRecordViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EE3992651F6FA582006DFF3B /* KDCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KDCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE3992691F6FA582006DFF3B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EE39926B1F6FA582006DFF3B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EE39926C1F6FA582006DFF3B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EE39926E1F6FA582006DFF3B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EE39926F1F6FA582006DFF3B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EE3992721F6FA582006DFF3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EE3992741F6FA582006DFF3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE3992771F6FA582006DFF3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EE3992791F6FA582006DFF3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE39927F1F6FA627006DFF3B /* KDRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KDRecordViewController.h; sourceTree = "<group>"; };
+		EE3992801F6FA627006DFF3B /* KDRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KDRecordViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE3992621F6FA582006DFF3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EE39925C1F6FA582006DFF3B = {
+			isa = PBXGroup;
+			children = (
+				EE3992671F6FA582006DFF3B /* KDCamera */,
+				EE3992661F6FA582006DFF3B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EE3992661F6FA582006DFF3B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE3992651F6FA582006DFF3B /* KDCamera.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE3992671F6FA582006DFF3B /* KDCamera */ = {
+			isa = PBXGroup;
+			children = (
+				EE39926B1F6FA582006DFF3B /* AppDelegate.h */,
+				EE39926C1F6FA582006DFF3B /* AppDelegate.m */,
+				EE39926E1F6FA582006DFF3B /* ViewController.h */,
+				EE39926F1F6FA582006DFF3B /* ViewController.m */,
+				EE39927F1F6FA627006DFF3B /* KDRecordViewController.h */,
+				EE3992801F6FA627006DFF3B /* KDRecordViewController.m */,
+				EE3992711F6FA582006DFF3B /* Main.storyboard */,
+				EE3992741F6FA582006DFF3B /* Assets.xcassets */,
+				EE3992761F6FA582006DFF3B /* LaunchScreen.storyboard */,
+				EE3992791F6FA582006DFF3B /* Info.plist */,
+				EE3992681F6FA582006DFF3B /* Supporting Files */,
+			);
+			path = KDCamera;
+			sourceTree = "<group>";
+		};
+		EE3992681F6FA582006DFF3B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EE3992691F6FA582006DFF3B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE3992641F6FA582006DFF3B /* KDCamera */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE39927C1F6FA582006DFF3B /* Build configuration list for PBXNativeTarget "KDCamera" */;
+			buildPhases = (
+				EE3992611F6FA582006DFF3B /* Sources */,
+				EE3992621F6FA582006DFF3B /* Frameworks */,
+				EE3992631F6FA582006DFF3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KDCamera;
+			productName = KDCamera;
+			productReference = EE3992651F6FA582006DFF3B /* KDCamera.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE39925D1F6FA582006DFF3B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = kd666;
+				TargetAttributes = {
+					EE3992641F6FA582006DFF3B = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = RU2G4LWP4K;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = EE3992601F6FA582006DFF3B /* Build configuration list for PBXProject "KDCamera" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EE39925C1F6FA582006DFF3B;
+			productRefGroup = EE3992661F6FA582006DFF3B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE3992641F6FA582006DFF3B /* KDCamera */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE3992631F6FA582006DFF3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE3992781F6FA582006DFF3B /* LaunchScreen.storyboard in Resources */,
+				EE3992751F6FA582006DFF3B /* Assets.xcassets in Resources */,
+				EE3992731F6FA582006DFF3B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE3992611F6FA582006DFF3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE3992811F6FA627006DFF3B /* KDRecordViewController.m in Sources */,
+				EE3992701F6FA582006DFF3B /* ViewController.m in Sources */,
+				EE39926D1F6FA582006DFF3B /* AppDelegate.m in Sources */,
+				EE39926A1F6FA582006DFF3B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EE3992711F6FA582006DFF3B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE3992721F6FA582006DFF3B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EE3992761F6FA582006DFF3B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE3992771F6FA582006DFF3B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EE39927A1F6FA582006DFF3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EE39927B1F6FA582006DFF3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE39927D1F6FA582006DFF3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RU2G4LWP4K;
+				INFOPLIST_FILE = KDCamera/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kd.66.KDCamera;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EE39927E1F6FA582006DFF3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RU2G4LWP4K;
+				INFOPLIST_FILE = KDCamera/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kd.66.KDCamera;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE3992601F6FA582006DFF3B /* Build configuration list for PBXProject "KDCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE39927A1F6FA582006DFF3B /* Debug */,
+				EE39927B1F6FA582006DFF3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE39927C1F6FA582006DFF3B /* Build configuration list for PBXNativeTarget "KDCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE39927D1F6FA582006DFF3B /* Debug */,
+				EE39927E1F6FA582006DFF3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EE39925D1F6FA582006DFF3B /* Project object */;
+}
