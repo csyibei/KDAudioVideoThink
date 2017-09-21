@@ -92,7 +92,7 @@
 
 - (void)captureOutput:(AVCaptureOutput *)captureOutput didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer fromConnection:(AVCaptureConnection *)connection
 {
-    
+    NSLog(@"123");
 }
 
 - (void)didReceiveMemoryWarning {
