@@ -19,6 +19,8 @@
 @property (nonatomic,strong) AVCaptureConnection *videoConnection;
 @property (nonatomic,strong) AVCaptureConnection *audioConnection;
 @property (nonatomic,strong) AVAssetWriter *assetWriter;
+@property (nonatomic,strong) AVAssetWriterInput *videoWriteInput;
+@property (nonatomic,strong) AVAssetWriterInput *audioWriteInput;
 @end
 
 @implementation KDRecordViewController
