@@ -21,6 +21,10 @@
 @property (nonatomic,strong) AVAssetWriter *assetWriter;
 @property (nonatomic,strong) AVAssetWriterInput *videoWriteInput;
 @property (nonatomic,strong) AVAssetWriterInput *audioWriteInput;
+@property (nonatomic,assign) CMFormatDescriptionRef videoFormat;
+@property (nonatomic,assign) CMFormatDescriptionRef audioFormat;
+@property (nonatomic,strong) NSDictionary *videoComproessionSetting;
+@property (nonatomic,strong) NSDictionary *audioComproessionSetting;
 @end
 
 @implementation KDRecordViewController
@@ -114,14 +118,44 @@
     NSLog(@"ddd -- %@",savePath);
     self.assetWriter = [[AVAssetWriter alloc] initWithURL:[NSURL URLWithString:savePath] fileType:AVFileTypeQuickTimeMovie error:nil];
     
+    
+    self.audioComproessionSetting = @{ AVEncoderBitRatePerChannelKey : @(28000),
+                                       AVFormatIDKey : @(kAudioFormatMPEG4AAC),
+                                       AVNumberOfChannelsKey : @(1),
+                                       AVSampleRateKey : @(22050) };
+    
+    
+    NSInteger numPixels = [UIScreen mainScreen].bounds.size.width * [UIScreen mainScreen].bounds.size.height;
+    
+    //每像素比特
+    CGFloat bitsPerPixel = 6.0;
+    NSInteger bitsPerSecond = numPixels * bitsPerPixel;
+    // 码率和帧率设置
+    NSDictionary *compressionProperties = @{ AVVideoAverageBitRateKey : @(bitsPerSecond),
+                                             AVVideoExpectedSourceFrameRateKey : @(30),
+                                             AVVideoMaxKeyFrameIntervalKey : @(30),
+                                             AVVideoProfileLevelKey : AVVideoProfileLevelH264BaselineAutoLevel };
+    
+    self.videoComproessionSetting = @{ AVVideoCodecKey : AVVideoCodecH264,
+                                       AVVideoScalingModeKey : AVVideoScalingModeResizeAspectFill,
+                                       AVVideoWidthKey : @([UIScreen mainScreen].bounds.size.height),
+                                       AVVideoHeightKey : @([UIScreen mainScreen].bounds.size.width),
+                                       AVVideoCompressionPropertiesKey : compressionProperties };
+    
 }
 
 - (void)captureOutput:(AVCaptureOutput *)captureOutput didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer fromConnection:(AVCaptureConnection *)connection
 {
     if (captureOutput == self.videoOutput) {
         NSLog(@"this is a vedioBuffer");
+        if (!self.videoFormat) {
+            self.videoFormat = CMSampleBufferGetFormatDescription(sampleBuffer);
+        }
     }else if (captureOutput == self.audioOutput){
         NSLog(@"this is a audioBuffer");
+        if (!self.audioFormat) {
+            self.audioFormat = CMSampleBufferGetFormatDescription(sampleBuffer);
+        }
     }else{
         NSLog(@"nothing");
     }
