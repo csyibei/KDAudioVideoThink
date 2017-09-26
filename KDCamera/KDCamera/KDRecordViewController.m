@@ -114,11 +114,6 @@
     [closeButton addTarget:self action:@selector(closeClick) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:closeButton];
 
-    NSString *savePath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).lastObject stringByAppendingPathComponent:@"recordVideo"];
-    NSLog(@"ddd -- %@",savePath);
-    self.assetWriter = [[AVAssetWriter alloc] initWithURL:[NSURL URLWithString:savePath] fileType:AVFileTypeQuickTimeMovie error:nil];
-    
-    
     self.audioComproessionSetting = @{ AVEncoderBitRatePerChannelKey : @(28000),
                                        AVFormatIDKey : @(kAudioFormatMPEG4AAC),
                                        AVNumberOfChannelsKey : @(1),
@@ -142,6 +137,22 @@
                                        AVVideoHeightKey : @([UIScreen mainScreen].bounds.size.width),
                                        AVVideoCompressionPropertiesKey : compressionProperties };
     
+}
+
+- (void)beginRecordPrepare
+{
+    NSString *savePath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).lastObject stringByAppendingPathComponent:@"recordVideo"];
+    NSLog(@"ddd -- %@",savePath);
+    self.assetWriter = [[AVAssetWriter alloc] initWithURL:[NSURL URLWithString:savePath] fileType:AVFileTypeQuickTimeMovie error:nil];
+    self.videoWriteInput = [[AVAssetWriterInput alloc] initWithMediaType:AVMediaTypeVideo outputSettings:self.videoComproessionSetting];
+    self.videoWriteInput.expectsMediaDataInRealTime = YES;
+    self.audioWriteInput = [[AVAssetWriterInput alloc] initWithMediaType:AVMediaTypeAudio outputSettings:self.audioComproessionSetting];
+    if ([self.assetWriter canAddInput:self.videoWriteInput]) {
+        [self.assetWriter addInput:self.videoWriteInput];
+    }
+    if ([self.assetWriter canAddInput:self.audioWriteInput]) {
+        [self.assetWriter addInput:self.audioWriteInput];
+    }
 }
 
 - (void)captureOutput:(AVCaptureOutput *)captureOutput didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer fromConnection:(AVCaptureConnection *)connection
